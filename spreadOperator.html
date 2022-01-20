@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread Operator (...agr)</h1>
+    <p>Spread Operator is just like rest operator but the use of spread and rest operators depending on the elements conditions</p>
+     <script>
+
+    // this is done only on the  basis of array by spread (...arg) operators
+  /*
+         var arr1 = [62,70,80,90];
+         var  arr2 = arr1;
+           // arr1.push(80,90);
+           var arr3 = [20,30,50];
+            // arr4 =  arr2.concat(arr3)
+            //console.log(arr4);
+           arr4 = [...arr1,...arr3];
+           console.log(arr4);
+     */
+
+
+     // using spread operators in objects 
+       var obj1 = {
+           firstName : "Vimlesh"
+       };
+       var obj2 = {
+           lastName : "Kumar"
+       };
+       var obj3 = {
+           age : 23
+       };
+
+       var obj4 = {...obj1, ...obj2, ...obj3};
+       console.log(obj4);
+     </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning Promise </h1>
+    <script>
+       /* let complete = false;
+         let prom = new Promise(function(resolve,reject){
+             if(complete){
+                 resolve("I am successfull.");
+             }else {
+             reject("I am failed.");
+             }
+         });
+         console.log(prom);
+         */
+
+        /* function prom(complete){
+         return new Promise(function(resolve,reject){
+             if(complete){
+                 resolve("I am successfull.");
+             }else {
+             reject("I am failed.");
+             }
+         });
+        };
+         console.log(prom(false));
+         */
+      
+          
+       /*  function prom(complete){
+         return new Promise(function(resolve,reject){
+             if(complete){
+                 resolve("I am successfull.");
+             }else {
+             reject("I am failed.");
+             }
+         });
+        };
+           let onfullFillment = (result) => {
+               console.log(result);
+           }
+
+           let onRejection = (result) => {
+               console.log(result);
+           }
+          
+            prom(true).then(onfullFillment);
+            prom(false).catch(onRejection);
+
+   */
+     
+
+/*
+   function prom(complete){
+         return new Promise(function(resolve,reject){
+             console.log("fetching data plz wait");
+             setTimeout(() =>{
+                if(complete){
+                 resolve("I am successfull.");
+             }else {
+             reject("I am failed.");
+             } 
+             },5000)
+         });
+        };
+           let onfullFillment = (result) => {
+               console.log(result);
+           }
+
+           let onRejection = (result) => {
+               console.log(result);
+           }
+          
+            prom(true).then(onfullFillment).catch(onRejection);
+
+            */
+
+
+            function prom(complete){
+         return new Promise(function(resolve,reject){
+             console.log("fetching data plz wait");
+             setTimeout(() =>{
+                if(complete){
+                 resolve("I am successfull.");
+             }else {
+             reject("I am failed.");
+             } 
+             },2000)
+         });
+        };
+           
+          
+            prom(true).then((result) => {
+               console.log(result);
+           }).catch((result) => {
+               console.log(result);
+           });
+
+
+    </script>
+</body>
+</html>

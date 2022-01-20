@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Closure funtion</h1>
+    <p>learning closure is very much useful for the future because lots of qustions are asked in the interview related this.
+
+    </p>
+<script>
+    const outFun=(a) =>{
+         let b = 10;
+      const innerFun=() =>{
+          let sum = a+b;
+          console.log(`sum of two funtions are ${sum}`);
+      }  
+      innerFun();
+     }
+     outFun(5);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About API's means Application Programming Interfaces</h1>
+    <div class="container">
+        <h1>Stundest's Data</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Autem omnis culpa libero, sapiente vero exercitationem 
+            facere quos recusandae deleniti iusto! Vitae doloribus enim 
+            suscipit quo nisi animi incidunt, in sint.
+        </p>
+    </div>
+    <button>Get Studenst's Data</button>
+    <button>Remove Student's Datat</button>
+    <script>
+        function getData(){
+            url = "https://api.github.com/users ";
+            fetch(url).then((response)=>{
+                return response.json();
+            }).then((data)=>{
+                console.log(data);
+            })
+            
+        }
+         getData()
+    </script>
+</body>
+</html>

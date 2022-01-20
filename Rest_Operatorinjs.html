@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning js rest operator which is so easy and very useful in js</h1>
+    <script>
+       /* function sum(){
+            console.log(arguments)
+
+            let sum = 0;
+            for(let i in arguments){
+                sum += arguments[i];
+            }
+            document.write(sum  + "<br>");
+
+        }
+        sum (20,30,50);
+        sum(20,30,);
+        sum(50,60,90,80,90,75,48,92,50);
+        */
+
+        function sum(name, ...arg){
+            console.log(arguments);
+            document.write(`Hello ${name} : `);
+
+            let sum = 0;
+            for(let i in arg){
+                sum += arg[i];
+            }
+            document.write(sum  + "<br>");
+
+        }
+        sum("Vimlesh Kumar",30,50);
+        sum("Ram Kumar",30,50,630,50);
+        sum("Mohan Kumar",30,50,50,60,30);
+        sum("Sonu Kumar",30,50,50,80,90,80);
+        sum("Shivam Kumar",30,50,50,90,60);
+
+    </script>
+</body>
+</html>
